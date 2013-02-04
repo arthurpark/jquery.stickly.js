@@ -2,32 +2,34 @@
 <html>
 <head>
     <style>
-        body {
-            width: 600px;
-            margin: auto;
-            font-family: Georgia, Times New Roman, serif;
-            font-size: 16px;
-        }
-
-        .container {
-            border: 1px solid black;
-        }
-
-        .sticky-container {
-            position: relative;
-            padding-right: 200px;
-        }
-
-        .sticky-cat {
-            position: absolute;
-
-            background: yellow url(http://placekitten.com/151/151);
-            top: 25px;
-            right: 25px;
-
-            width: 150px;
-            height: 150px;
-        }
+/* line 6, ../../app/assets/stylesheets/home.css.scss */
+.container {
+  background: #ccc;
+  width: 960px;
+  height: 1800px;
+}
+/* line 10, ../../app/assets/stylesheets/home.css.scss */
+.container section {
+  display: inline-block;
+  width: 480px;
+}
+/* line 14, ../../app/assets/stylesheets/home.css.scss */
+.container .stickly-container {
+  position: absolute;
+  top: 300px;
+  left: 500px;
+  background: #f1f1f1;
+  width: 300px;
+  height: 500px;
+  padding: 50px 0;
+}
+/* line 22, ../../app/assets/stylesheets/home.css.scss */
+.container .stickly-container .stickly {
+  position: absolute;
+  background-color: #333333;
+  width: 300px;
+  height: 300px;
+}
     </style>
     <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
     <script src="jquery.stickly.js"></script>
@@ -41,14 +43,31 @@ $(function() {
     <header>
         <h1>header</h1>
     </header>
-    <section class="container sticky-container">
-        <p>Whatever direct trade  godard lomo dreamcatcher.  Locavore hella wolf Austin direct trade  brunch.  Cosby sweater irony Austin, art party wes anderson DIY retro you probably haven't heard of them four loko.  Kale chips typewriter gastropub, polaroid cardigan gluten-free DIY forage 3 wolf moon squid chillwave raw denim vegan.  Biodiesel yr butcher, banksy truffaut VHS pop-up 3 wolf moon.  Salvia etsy mustache lo-fi, freegan hella thundercats flexitarian bespoke.  Dreamcatcher high life bushwick +1, shoreditch cliche DIY cray.</p><p>Sartorial echo park kogi street art tumblr williamsburg.  Polaroid occupy squid, food truck williamsburg wolf pitchfork yr narwhal ethical pickled terry richardson odd future forage.  Odd future truffaut cardigan pork belly four loko semiotics.  Lo-fi marfa pour-over, sriracha hella narwhal post-ironic mustache messenger bag vice sustainable.  Small batch mustache post-ironic american apparel quinoa, locavore put a bird on it brunch.  Yr odd future terry richardson lomo selvage viral.  Artisan mlkshk truffaut raw denim direct trade.</p><p>8-bit echo park brunch +1 cosby sweater.  Cosby sweater leggings high life, cardigan flexitarian authentic artisan mlkshk 8-bit twee umami helvetica master cleanse.  Wayfarers cliche etsy sartorial photo booth, Austin portland.  Williamsburg occupy hoodie swag, keytar fanny pack direct trade  cred VHS gastropub seitan fap.  Food truck bushwick kale chips, quinoa leggings messenger bag fanny pack bespoke.  DIY keffiyeh trust fund, stumptown wolf vinyl swag.  Terry richardson butcher cosby sweater, farm-to-table wayfarers american apparel street art quinoa food truck locavore echo park twee shoreditch.</p><p>Keffiyeh thundercats mustache, craft beer wayfarers cardigan selvage godard pickled ennui.  Keffiyeh gentrify selvage squid lomo, viral cardigan small batch cliche pour-over flexitarian.  Dreamcatcher yr food truck wayfarers, organic mcsweeney's occupy bespoke four loko high life readymade quinoa street art ethnic.  Artisan whatever vinyl mustache terry richardson.  Tumblr 3 wolf moon small batch, ethnic before they sold out selvage occupy lo-fi biodiesel carles Austin food truck mustache.  Mustache godard food truck, wolf high life viral truffaut bushwick DIY single-origin coffee.  Fixie freegan jean shorts, stumptown direct trade  food truck wolf vegan thundercats vinyl flexitarian umami master cleanse twee.</p>
-        <div class="sticky-cat">
+    <h1>Stickly Demo</h1>
+<div class="container">
+    <section>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nisl magna, condimentum faucibus viverra sed, posuere in tellus. Nullam lectus magna, congue non egestas ac, tempor ut sem. Integer in adipiscing arcu. Cras ut auctor sapien. In hac habitasse platea dictumst. Etiam condimentum dui id eros laoreet dignissim. Donec sit amet enim libero. Sed vel quam eget massa luctus euismod eget in est. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse iaculis lacus quis sapien consectetur quis aliquam augue laoreet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed egestas fringilla dui, non ornare quam accumsan a. Praesent sem sem, tristique in egestas at, dictum a dui.
+        </p>
+        <p>
+            Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus sed ornare est. Curabitur eu mauris massa. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec tempus vulputate tempus. Mauris a nibh lectus. Phasellus suscipit suscipit justo, id bibendum ligula tincidunt a. Proin erat leo, luctus ut gravida a, feugiat quis lectus. Nunc aliquet, velit non consequat gravida, lacus urna suscipit nisl, id porttitor nisi dui et velit. Praesent eros neque, laoreet sed hendrerit molestie, pretium consequat leo. Nulla facilisi. Nullam hendrerit accumsan diam, nec imperdiet velit venenatis eleifend.
+        </p>
+        <p>
+            Phasellus eget diam ac lectus tristique hendrerit et fermentum ligula. Duis felis mauris, dapibus non accumsan ut, mattis sed orci. Mauris tincidunt mauris id lacus interdum sit amet venenatis ante vulputate. Vestibulum aliquam, nisl non rutrum commodo, nunc orci luctus massa, eleifend lacinia lectus turpis ac nunc. Pellentesque vel dolor velit. Etiam ornare tincidunt sapien nec commodo. Curabitur sed sapien purus. Nullam sagittis purus ut libero mattis feugiat. Morbi quis neque massa.
+        </p>
+        <p>
+            Nulla ut quam ligula, eget fermentum lorem. Curabitur id neque ac erat tincidunt adipiscing cursus eget velit. Phasellus at risus tellus. Phasellus rhoncus ornare ante, id ultrices mi scelerisque dignissim. Donec vel massa et odio dapibus lacinia. Nam vel nisi a justo varius vulputate. Duis molestie, quam nec fringilla fermentum, diam tortor dignissim nisl, non mattis eros felis ullamcorper libero. Sed dignissim diam at neque gravida eleifend. Duis a metus vitae libero congue consectetur. Cras imperdiet vulputate erat, sit amet aliquet eros imperdiet quis. Sed quis quam id enim convallis blandit.
+        </p>
+        <p>
+            Aliquam auctor erat et nibh imperdiet molestie. Sed feugiat venenatis laoreet. Praesent in nunc ligula. Sed tempor ipsum ut est hendrerit in cursus neque fermentum. Maecenas consequat sodales ultrices. Donec ante lectus, rutrum vel ultricies id, aliquet eu ante. Aenean egestas iaculis massa ut dignissim. Duis eget lacus augue. Phasellus posuere nisl id tellus vestibulum vestibulum. Ut tincidunt interdum tortor, eget varius nunc vestibulum vel. Nulla elit lacus, mollis sit amet pretium vel, dictum quis ligula.
+        </p>
+    </section>
+    <div class="stickly-container">
+        <div class="stickly">
+
         </div>
-    </section>
-    <section class="container">
-        <p>Whatever direct trade  godard lomo dreamcatcher.  Locavore hella wolf Austin direct trade  brunch.  Cosby sweater irony Austin, art party wes anderson DIY retro you probably haven't heard of them four loko.  Kale chips typewriter gastropub, polaroid cardigan gluten-free DIY forage 3 wolf moon squid chillwave raw denim vegan.  Biodiesel yr butcher, banksy truffaut VHS pop-up 3 wolf moon.  Salvia etsy mustache lo-fi, freegan hella thundercats flexitarian bespoke.  Dreamcatcher high life bushwick +1, shoreditch cliche DIY cray.</p><p>Sartorial echo park kogi street art tumblr williamsburg.  Polaroid occupy squid, food truck williamsburg wolf pitchfork yr narwhal ethical pickled terry richardson odd future forage.  Odd future truffaut cardigan pork belly four loko semiotics.  Lo-fi marfa pour-over, sriracha hella narwhal post-ironic mustache messenger bag vice sustainable.  Small batch mustache post-ironic american apparel quinoa, locavore put a bird on it brunch.  Yr odd future terry richardson lomo selvage viral.  Artisan mlkshk truffaut raw denim direct trade.</p><p>8-bit echo park brunch +1 cosby sweater.  Cosby sweater leggings high life, cardigan flexitarian authentic artisan mlkshk 8-bit twee umami helvetica master cleanse.  Wayfarers cliche etsy sartorial photo booth, Austin portland.  Williamsburg occupy hoodie swag, keytar fanny pack direct trade  cred VHS gastropub seitan fap.  Food truck bushwick kale chips, quinoa leggings messenger bag fanny pack bespoke.  DIY keffiyeh trust fund, stumptown wolf vinyl swag.  Terry richardson butcher cosby sweater, farm-to-table wayfarers american apparel street art quinoa food truck locavore echo park twee shoreditch.</p><p>Keffiyeh thundercats mustache, craft beer wayfarers cardigan selvage godard pickled ennui.  Keffiyeh gentrify selvage squid lomo, viral cardigan small batch cliche pour-over flexitarian.  Dreamcatcher yr food truck wayfarers, organic mcsweeney's occupy bespoke four loko high life readymade quinoa street art ethnic.  Artisan whatever vinyl mustache terry richardson.  Tumblr 3 wolf moon small batch, ethnic before they sold out selvage occupy lo-fi biodiesel carles Austin food truck mustache.  Mustache godard food truck, wolf high life viral truffaut bushwick DIY single-origin coffee.  Fixie freegan jean shorts, stumptown direct trade  food truck wolf vegan thundercats vinyl flexitarian umami master cleanse twee.</p>
-    </section>
+    </div>
+</div>
     <footer>
         <p>Footer</p>
     </footer>
