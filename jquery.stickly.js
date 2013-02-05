@@ -62,26 +62,24 @@
                     isSticky = true;
                 }
             } else {
-                if ($me.css('position') === 'fixed') {
-                    if (scrollTop >= bottomBound) {
-                        // When stickly's bottom hit's bottom thrashhold
-                        $me.css({
-                            'position': 'absolute',
-                            'top': '',
-                            'bottom' : containerPaddingBottom + 'px',
-                            'left': (containerPaddingLeft ? containerPaddingLeft + 'px' : 0)
-                        });
-                        isSticky = false;
-                    } else if (scrollTop <= topBound || scrollTop <= 0) {
-                        // When stickly's top hits its original top position.
-                        $me.css({
-                            'position': 'absolute',
-                            'top': containerPaddingTop + 'px',
-                            'bottom': '',
-                            'left': (containerPaddingLeft ? containerPaddingLeft + 'px' : 0)
-                        });
-                        isSticky = false;
-                    }
+                if (scrollTop >= bottomBound) {
+                    // When stickly's bottom hit's bottom thrashhold
+                    $me.css({
+                        'position': 'absolute',
+                        'top': '',
+                        'bottom' : containerPaddingBottom + 'px',
+                        'left': (containerPaddingLeft ? containerPaddingLeft + 'px' : 0)
+                    });
+                    isSticky = false;
+                } else if (scrollTop <= topBound || scrollTop <= 0) {
+                    // When stickly's top hits its original top position.
+                    $me.css({
+                        'position': 'absolute',
+                        'top': containerPaddingTop + 'px',
+                        'bottom': '',
+                        'left': (containerPaddingLeft ? containerPaddingLeft + 'px' : 0)
+                    });
+                    isSticky = false;
                 }
             }
         }
